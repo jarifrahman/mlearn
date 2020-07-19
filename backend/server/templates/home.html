@@ -1,0 +1,28 @@
+<form method="get" action="{% url 'test' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    age:
+    <br />
+    <input type="text" name="age" />
+    <br />
+    <br />
+    workplace:
+    <br />
+    <input type="text" name="workplace" />
+    <br />
+    <br />
+    fnlwgt:
+    <br />
+    <input type="text" name="fnlwgt" />
+    <br />
+    <br />
+    
+    <br />
+    <br />
+
+   
+    <br /> <br />
+    <input class="btn btn-primary" type="submit" value="Add Information" />
+</form>
+
+
+{{response.data}}
